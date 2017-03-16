@@ -9,7 +9,9 @@
 			},
 			layouts: {
 				type: [String, Array],
-				default:['qwertyuiop|asdfghjkl|{upper}zxcvbnm{backspace}|{123:goto:1}{space:space}.{Go:custom}','1234567890|!@#$\"&*()|?^/[]:;%{backspace}|{ABC:goto:0}{space:space}.{custom:custom}']
+				default:function(){
+					return ['qwertyuiop|asdfghjkl|{upper}zxcvbnm{backspace}|{123:goto:1}{space:space}.{Go:custom}','1234567890|!@#$\"&*()|?^/[]:;%{backspace}|{ABC:goto:0}{space:space}.{custom:custom}']
+				}
 			},
 			maxlength: {
 				type: Number,
